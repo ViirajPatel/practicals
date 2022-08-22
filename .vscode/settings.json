@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.html": "html",
+        "MATRIXMUL.C": "cpp",
+        "STAR.C": "cpp",
+        "iostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
