@@ -2,7 +2,7 @@
 #include <pthread.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+#include <time.h>
 #define MAX 8
 
 void *mult(void *a)
@@ -55,24 +55,33 @@ int main()
     }
 
     int max = r1 * c2;
+   
+    
+    
+    
     pthread_t *threads;
     threads = (pthread_t *)malloc(max * sizeof(pthread_t));
 
     int count = 0;
     int *data = NULL;
+    clock_t t;
+    t = clock();
     for (i = 0; i < r1; i++)
         for (j = 0; j < c2; j++)
         {
-            data = (int *)malloc((20) * sizeof(int));
+            data = (int *)malloc((MAX+1) * sizeof(int));
             data[0] = c1;
             for (k = 0; k < c1; k++)
                 data[k + 1] = matA[i][k];
 
             for (k = 0; k < r2; k++)
                 data[k + c1 + 1] = matB[k][j];
-
+            
+            
             pthread_create(&threads[count++], NULL, mult, (void *)(data));
+          
         }
+    t = clock() - t;
     printf("RESULTANT MATRIX IS :- \n");
     for (i = 0; i < max; i++)
     {
@@ -85,5 +94,9 @@ int main()
         if ((i + 1) % c2 == 0)
             printf("\n");
     }
+    
+    double time_taken = ((double)t) / CLOCKS_PER_SEC; // in seconds
+
+    printf("fun() took %f seconds to execute \n", time_taken);
     return 0;
 }
