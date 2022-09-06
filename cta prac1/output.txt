@@ -1,0 +1,45 @@
+..../10k_random.txt...
+it took 0.101980 seconds to execute insertion
+it took 0.666392 seconds to execute selection
+it took 0.662161 seconds to execute bubble
+it took 0.001629 seconds to execute quick
+..../10k_asc.txt...
+it took 0.000051 seconds to execute insertion
+it took 0.174299 seconds to execute selection
+it took 0.176344 seconds to execute bubble
+it took 0.182088 seconds to execute quick
+..../10k_dsc.txt...
+it took 0.215838 seconds to execute insertion
+it took 0.748447 seconds to execute selection
+it took 0.730769 seconds to execute bubble
+it took 0.177594 seconds to execute quick
+..../50k_random.txt...
+it took 2.412779 seconds to execute insertion
+it took 16.947164 seconds to execute selection
+it took 17.284325 seconds to execute bubble
+it took 0.009366 seconds to execute quick
+..../50k_asc.txt...
+it took 0.000249 seconds to execute insertion
+it took 4.306790 seconds to execute selection
+it took 4.395747 seconds to execute bubble
+it took 4.376080 seconds to execute quick
+..../50k_dsc.txt...
+it took 4.754705 seconds to execute insertion
+it took 17.405342 seconds to execute selection
+it took 17.249980 seconds to execute bubble
+it took 4.358522 seconds to execute quick
+..../100k_random.txt...
+it took 9.467358 seconds to execute insertion
+it took 67.538733 seconds to execute selection
+it took 68.097332 seconds to execute bubble
+it took 0.019944 seconds to execute quick
+..../100k_asc.txt...
+it took 0.000573 seconds to execute insertion
+it took 17.038902 seconds to execute selection
+it took 17.378019 seconds to execute bubble
+it took 17.473657 seconds to execute quick
+..../100k_dsc.txt...
+it took 19.038142 seconds to execute insertion
+it took 69.985845 seconds to execute selection
+it took 67.924502 seconds to execute bubble
+it took 17.303327 seconds to execute quick

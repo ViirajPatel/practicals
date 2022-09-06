@@ -83,8 +83,7 @@ vector<int> fileRead(const char *fname, int size)
     {
         fscanf(pFile, "%d", &temp);
         v.push_back(temp);
-        // arr[count] = temp;
-        // count++;
+       
     }
 
     fclose(pFile);
@@ -96,8 +95,7 @@ int main()
 {
 
     vector<int> v;
-    // int arr[100001],arr2[100001];
-    // arr = fileRead("./100k_dsc.txt",100001);
+   
     const char *files[3][3] = {{"./10k_random.txt", "./10k_asc.txt", "./10k_dsc.txt"}, {"./50k_random.txt", "./50k_asc.txt", "./50k_dsc.txt"}, {"./100k_random.txt", "./100k_asc.txt", "./100k_dsc.txt"}};
     int count=10001;
     clock_t t;

@@ -9,10 +9,8 @@ void swap(int *a, int *b)
     *a = *b;
     *b = t;
 }
-// int partition(vector<int> arr, int low, int high)
+
 int partition(int arr[], int low, int high) 
-
-
 {
     int pi = arr[low];
     int i = low ;
@@ -29,9 +27,7 @@ int partition(int arr[], int low, int high)
 	    j = j - 1;
 	   
 	} while (arr[j] > pi && j !=low);
-
-
-
+	
 	if (i < j){
 	 
 	    swap(&arr[i], &arr[j]);
@@ -43,9 +39,8 @@ int partition(int arr[], int low, int high)
 	}
     }
 }
-// void quick(vector<int> arr, int low, int high)
-void quick(int arr[], int low, int high) 
 
+void quick(int arr[], int low, int high) 
 {
    int pi;
 	   if (low < high)
@@ -73,20 +68,20 @@ int main(){
 		arr[count] = temp;
 		count++;
 		
- }
+	}
 
- fclose(pFile);
+	fclose(pFile);
 
 
- clock_t t;
- t = clock();
+	clock_t t;
+	t = clock();
 
- quick(arr, 0, 100000);
- t = clock() - t;
- double time_taken = ((double)t) / CLOCKS_PER_SEC;
+	quick(arr, 0, 100000);
+	t = clock() - t;
+	double time_taken = ((double)t) / CLOCKS_PER_SEC;
 
- for (int i=0;i<=5;i++)
-	 cout << arr[i] << " ";
- printf("it took %f seconds to execute quick \n", time_taken);
+	for (int i=0;i<=5;i++)
+		cout << arr[i] << " ";
+	printf("it took %f seconds to execute quick \n", time_taken);
  return 0;
 }
